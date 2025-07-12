@@ -33,11 +33,11 @@ vectorstore = Chroma(
 # 4. Создание retriever
 retriever = vectorstore.as_retriever(
     search_type="similarity",
-    search_kwargs={"k": 5}
+    search_kwargs={"k": 3}
 )
 
 # 5. Пример запроса
-query = "Указания по ЭЧД"
+query = "Какие бывают компоненты промежуточного контура?"
 results = retriever.get_relevant_documents(query)
 
 # Вывод результатов

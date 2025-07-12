@@ -3,3 +3,7 @@ venv
 env
 data
 extracted_data
+__pycache__
+.streamlit
+secrets.toml
+chroma_db2
